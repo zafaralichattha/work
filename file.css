@@ -1,103 +1,52 @@
-/* ----- GLOBAL STYLES ----- */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+    background: #f4f4f4;
+    color: #222;
 }
 
-/* ----- CONTAINER ----- */
+header {
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 .container {
     width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 
-/* ----- HEADER ----- */
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-/* ----- NAVIGATION ----- */
-nav {
-    background: #444;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 10px;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ----- MAIN CONTENT ----- */
-main {
-    padding: 20px 0;
-}
-
-/* ----- CARD COMPONENT ----- */
 .card {
-    background: white;
-    border-radius: 8px;
+    background-color: #ffffff;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* ----- BUTTONS ----- */
-.btn {
-    display: inline-block;
-    padding: 10px 16px;
-    background: #0078ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.2s ease;
+.card h2 {
+    margin-top: 0;
 }
 
-.btn:hover {
-    background: #005fcc;
+.code-box {
+    background-color: #1e1e1e;
+    color: #c5c5c5;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre;
+    line-height: 1.5;
 }
 
-/* ----- FOOTER ----- */
 footer {
-    background: #222;
-    color: #fff;
+    background-color: #24292e;
+    color: #ffffff;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
 }
 
-/* ----- RESPONSIVE ----- */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin-bottom: 10px;
-    }
-}
